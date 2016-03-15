@@ -6,11 +6,11 @@ angular.module('starter.services-codes', [])
  */
 .factory('Codes', function(Utils, $q) {
   var self = this;
-  
+
   self.handleError = function(error) {
     Utils.showMessage(self.getErrorMessage(error), 1500);
   };
-  
+
   self.getErrorMessage = function(error) {
     var updateMessage = "";
     console.log(error)
@@ -18,7 +18,7 @@ angular.module('starter.services-codes', [])
       switch(error.code) {
         case 'INVALID_USER':
           //
-          updateMessage = "User does not excist... Sign up!"
+          updateMessage = "User does not exist... Sign up!"
           // perhaps an automatic redirect
           break
         case 'INVALID_EMAIL':
@@ -53,7 +53,7 @@ angular.module('starter.services-codes', [])
           //
           updateMessage = "Your post can have max. " + POST_MAX_CHAR + " characters"
           break
-        default: 
+        default:
           //
           updateMessage = "Oops. Something went wrong..."
           break
@@ -63,8 +63,8 @@ angular.module('starter.services-codes', [])
     }
     return updateMessage;
   };
-  
-  
+
+
   /**
    * Generic function to validate input
    */
@@ -80,7 +80,7 @@ angular.module('starter.services-codes', [])
       case "":
         handleValidation("INPUT_NULL", false)
         break
-      default: 
+      default:
         handleValidation("INPUT_VALID", true)
         break
     }
