@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <widget id="com.ionicframework.firebasesocialstarter120478" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>SocialEx</name>
+  <name>firebase-social-starter</name>
   <description>
         The most generic social media app you'll find.
     </description>
