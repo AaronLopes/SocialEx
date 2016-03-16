@@ -59,7 +59,7 @@ angular.module('starter.services-auth', [])
    * returns on error: error
    *
    * common error.code:
-   * INVALID_USER (user does not exist)
+   * INVALID_USER (user does not excist)
    * INVALID_EMAIL (email incorrect)
    * INVALID_PASSWORD
    */
